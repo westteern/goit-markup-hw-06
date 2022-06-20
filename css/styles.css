@@ -208,7 +208,8 @@ span {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 }
-.hero-button {
+.hero-button,
+.btn-footer {
 	display: inline-block;
 	border-radius: 4px;
 	padding: 10px 32px;
@@ -217,6 +218,8 @@ span {
 
 	background-color: var(--accent-color);
 	color: var(--second-accent-color);
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 	font-family: inherit;
 	font-weight: 700;
@@ -456,7 +459,8 @@ span {
 }
 .footer .logo,
 .address-list .location,
-.footer-social .list-titel {
+.footer-social .list-titel,
+.label-footer {
 	color: var(--second-accent-color);
 }
 .footer-content {
@@ -492,7 +496,8 @@ span {
 }
 
 
-.footer-social .list-titel {
+.footer-social .list-titel,
+.label-footer {
 	margin-bottom: 20px;
 
 	font-weight: 700;
@@ -523,6 +528,29 @@ span {
 .footer-social-list .link:hover,
 .footer-social-list .link:focus {
 	background-color: var(--accent-color);
+}
+
+.form-footer {
+	margin-left: 93px;
+}
+.label-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;	
+}
+.input-footer {
+	width: 358px;
+	
+	padding: 15px 16px;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: inherit;
+}
+.btn-footer {
+	/* display: inline-flex; */
+	
 }
 
 /* Портфоліо */
