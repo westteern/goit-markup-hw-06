@@ -234,7 +234,10 @@ span {
 }
 .hero-button:hover,
 .hero-button:focus,
-.hero-button:active {
+.hero-button:active,
+.btn-footer:hover,
+.btn-footer:focus,
+.btn-footer:active {
 	background-color: #188ce8;
 	color: var(--second-accent-color);
 }
@@ -472,6 +475,7 @@ span {
 	margin-bottom: 20px;
 	padding: 0;
 }
+
 .address-list a {
 	color: rgba(255, 255, 255, 0.6);
 
@@ -531,7 +535,7 @@ span {
 }
 
 .form-footer {
-	margin-left: 93px;
+	margin-left: auto;
 }
 .label-footer {
 	display: flex;
@@ -540,8 +544,10 @@ span {
 }
 .input-footer {
 	width: 358px;
-	
+		
 	padding: 15px 16px;
+
+	color: rgba(255, 255, 255, 0.6);
 
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -549,8 +555,17 @@ span {
 	background-color: inherit;
 }
 .btn-footer {
-	/* display: inline-flex; */
-	
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 12px;
+	padding: 10px 28px;
+}
+.footer-form-icon {
+	margin-left: 10px;
+	width: 24px;
+	height: 24px;
 }
 
 /* Портфоліо */
@@ -720,6 +735,10 @@ span {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
+}
+.modal .contract {
+	text-decoration: none;
+	
 }
 
 
