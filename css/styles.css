@@ -844,35 +844,42 @@ span {
 	margin-bottom: 30px;
 	justify-content: center;		
 }
-
 .icon-position {
-	position: absolute;	
+	position: absolute;
+		
 	top: 50%;
 	left: 11px;
 	transform: translateY(-55%);
 
 	display: block;
+	
 	width: 16px;
 	height: 15px;
 
 	border: 2px solid #212121;
 	border-radius: 2px;
 	pointer-events: none;
+	
+	transition: border-color var(--prime-animation) var(--prime-transition-timing-function);
 }
 .checkbox-icon {
 	display: block;
 	width: 100%;
 	height: 100%;
-	fill: #FFFFFF;			
+	fill: #FFFFFF;				
 }
 .checkbox:checked + .icon-position {
 	background-color: var(--accent-color);
-	border: 1px solid var(--accent-color);	
+	border: none;
 }
-
+.checkbox:focus + .icon-position {
+	border-color: var(--accent-color);
+	outline: 1px solid #212121;
+}
 .checkbox-text { 
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
+	
 		
 	padding-left: 24px;	
 	font-size: 14px;
