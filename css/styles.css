@@ -77,7 +77,7 @@ span {
 }
 .main-nav {
 	display: flex;
-	align-items: center;	
+	align-items: center;
 }
 .site-nav {
 	display: flex;
@@ -101,7 +101,6 @@ span {
 	text-decoration: none;
 
 	transition: color var(--prime-transition-timing-function) var(--prime-animation);
-	
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -109,10 +108,10 @@ span {
 }
 .site-nav .current {
 	position: relative;
-	color: var(--accent-color);	
+	color: var(--accent-color);
 }
 .site-nav .current::after {
-	content: '';
+	content: "";
 	position: absolute;
 	display: block;
 	bottom: -1px;
@@ -120,7 +119,7 @@ span {
 	width: 100%;
 	height: 4px;
 
-	background-color:var(--accent-color);
+	background-color: var(--accent-color);
 	transform: scale(0);
 	border-radius: 2px;
 
@@ -131,9 +130,11 @@ span {
 	animation-fill-mode: forwards;
 }
 @keyframes appearInFromCenter {
-	0% { transform: scale(0);		
+	0% {
+		transform: scale(0);
 	}
-	100% { transform: scale(1);
+	100% {
+		transform: scale(1);
 	}
 }
 .contacts-list {
@@ -186,7 +187,7 @@ span {
 	background-color: #c4c4c4;
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcgimg.jpg);
 	background-size: cover;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 }
 .centred {
 	display: block;
@@ -262,9 +263,9 @@ span {
 /* Переваги */
 
 .benefits-list {
-	display: flex;	
+	display: flex;
 }
-.benefits-list .item {		
+.benefits-list .item {
 	width: 270px;
 }
 .benefits-list .item + .item {
@@ -277,7 +278,7 @@ span {
 
 	max-width: 270px;
 	height: 120px;
-	
+
 	margin-bottom: 30px;
 	background-color: #f5f4fa;
 
@@ -315,10 +316,10 @@ span {
 	position: relative;
 }
 .do-list .img {
-	display: block;	
+	display: block;
 }
 .do-list .label {
-	position: absolute;	
+	position: absolute;
 	bottom: 0;
 
 	display: flex;
@@ -328,7 +329,7 @@ span {
 	height: 70px;
 	margin-top: 0;
 	margin-bottom: 0;
-	
+
 	text-align: center;
 	font-weight: 700;
 	font-size: 14px;
@@ -365,8 +366,6 @@ span {
 	padding-right: 32px;
 	padding-bottom: 30px;
 	padding-left: 32px;
-
-	
 }
 .team-list .list-titel {
 	margin-bottom: 10px;
@@ -388,19 +387,19 @@ span {
 }
 .social-list {
 	display: flex;
-	justify-content: center;		
+	justify-content: center;
 }
 .social-list-item {
 	width: 44px;
-	height: 44px;	
+	height: 44px;
 }
-.social-list-item +.social-list-item {
+.social-list-item + .social-list-item {
 	margin-left: 10px;
 }
 .social-list .link {
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 	width: 100%;
 	height: 100%;
 
@@ -410,7 +409,7 @@ span {
 	border-radius: 50px;
 
 	transition: color var(--prime-transition-timing-function) var(--prime-animation),
-	background-color var(--prime-transition-timing-function) var(--prime-animation);
+		background-color var(--prime-transition-timing-function) var(--prime-animation);
 }
 .social-list-icon {
 	fill: currentColor;
@@ -424,7 +423,7 @@ span {
 	padding: 94px 0;
 }
 .client-list {
-	display: flex;	
+	display: flex;
 }
 .client-list-item {
 	width: 170px;
@@ -446,8 +445,7 @@ span {
 	fill: #afb1b8;
 
 	transition: fill var(--prime-transition-timing-function) var(--prime-animation),
-			border var(--prime-transition-timing-function) var(--prime-animation);
-	
+		border var(--prime-transition-timing-function) var(--prime-animation);
 }
 .client-list-icom {
 	fill: currentColor;
@@ -467,7 +465,7 @@ span {
 .footer .logo,
 .address-list .location,
 .footer-social .list-titel,
-.label-footer {
+.footer-form-titel {
 	color: var(--second-accent-color);
 }
 .footer-content {
@@ -489,8 +487,8 @@ span {
 	letter-spacing: 0.03em;
 
 	text-decoration: none;
-	
-	transition: color var(--prime-transition-timing-function) var(--prime-animation)
+
+	transition: color var(--prime-transition-timing-function) var(--prime-animation);
 }
 .address-list .link {
 	display: block;
@@ -503,9 +501,9 @@ span {
 	margin-bottom: 9px;
 }
 
-
 .footer-social .list-titel,
-.label-footer {
+.footer-form-titel {
+	margin-top: 0;
 	margin-bottom: 20px;
 
 	font-weight: 700;
@@ -530,7 +528,7 @@ span {
 	border-radius: 50px;
 	background-color: rgba(255, 255, 255, 0.1);
 	color: var(--second-accent-color);
-	
+
 	transition: background-color var(--prime-transition-timing-function) var(--prime-animation);
 }
 .footer-social-list .link:hover,
@@ -541,14 +539,10 @@ span {
 .form-footer {
 	margin-left: auto;
 }
-.label-footer {
-	display: flex;
-	flex-direction: column;
-	align-items: baseline;	
-}
+
 .input-footer {
 	width: 358px;
-		
+
 	padding: 15px 16px;
 
 	color: rgba(255, 255, 255, 0.6);
@@ -588,8 +582,7 @@ span {
 
 	background-color: #f5f4fa;
 	color: #212121;
-	
-	
+
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
@@ -600,8 +593,8 @@ span {
 	text-decoration: none;
 
 	transition: background-color var(--prime-transition-timing-function) var(--prime-animation),
-	color var(--prime-transition-timing-function) var(--prime-animation),
-	 box-shadow var(--prime-transition-timing-function) var(--prime-animation);
+		color var(--prime-transition-timing-function) var(--prime-animation),
+		box-shadow var(--prime-transition-timing-function) var(--prime-animation);
 }
 .filter-list .button:hover,
 .filter-list .button:focus,
@@ -620,11 +613,11 @@ span {
 .work .item {
 	width: calc((100% - 60px) / 3);
 }
-.work-link {	
+.work-link {
 	display: block;
 	text-decoration: none;
 
-	transition: box-shadow var(--prime-transition-timing-function) var(--prime-animation);	
+	transition: box-shadow var(--prime-transition-timing-function) var(--prime-animation);
 }
 .work-link .box {
 	position: relative;
@@ -639,11 +632,11 @@ span {
 	padding: 63px 24px;
 
 	height: 100%;
-	
+
 	font-size: 18px;
 	line-height: 1.55;
-	letter-spacing: 0.03em;	
-	color: #FFFFFF;
+	letter-spacing: 0.03em;
+	color: #ffffff;
 
 	background: rgba(33, 150, 243, 0.9);
 
@@ -711,8 +704,8 @@ span {
 	width: 528px;
 	min-height: 581px;
 	padding: 40px;
-	
-	background: #FFFFFF;
+
+	background: #ffffff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 
@@ -725,7 +718,7 @@ span {
 
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 
 	width: 30px;
 	height: 30px;
@@ -758,24 +751,24 @@ span {
 	line-height: 1.15;
 	text-align: center;
 	letter-spacing: 0.03em;
-	
-	color: #212121;	
-}
-.form-field {	
-	position: relative;
 
+	color: #212121;
+}
+.form-field {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 }
 .form-label {
-	margin-bottom: 4px;
-
+	margin-top: 10px;
 	font-size: 12px;
 	line-height: 1.16;
-	
+
 	letter-spacing: 0.01em;
 	color: #757575;
-
+}
+.form-label[for="nik"] {
+	margin-top: 0;
 }
 .modal-input {
 	width: 100%;
@@ -793,7 +786,7 @@ span {
 }
 .form-field .icon-absolute {
 	position: relative;
-	margin-bottom: 10px;	
+	margin-top: 4px;
 }
 .modal-form-icon {
 	position: absolute;
@@ -801,17 +794,17 @@ span {
 	top: 50%;
 	left: 12px;
 	transform: translateY(-50%);
-		
+
 	width: 18px;
 	height: 18px;
-	
+
 	transition: fill var(--prime-animation) var(--prime-transition-timing-function);
 }
 .form-textarea {
 	width: 100%;
 	height: 138px;
 	padding: 12px 16px;
-	margin-bottom: 20px;
+	margin-top: 4px;
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
@@ -828,7 +821,7 @@ span {
 	font-size: 12px;
 	line-height: 1.16;
 	letter-spacing: 0.01em;
-	
+
 	color: rgba(117, 117, 117, 0.5);
 }
 .modal-input:focus,
@@ -841,32 +834,33 @@ span {
 }
 .checkbox-field {
 	position: relative;
-	margin-bottom: 30px;
-	justify-content: center;		
+	margin-top: 20px;
+
+	justify-content: center;
 }
 .icon-position {
 	position: absolute;
-		
+
 	top: 50%;
 	left: 11px;
 	transform: translateY(-55%);
 
 	display: block;
-	
+
 	width: 16px;
 	height: 15px;
 
 	border: 2px solid #212121;
 	border-radius: 2px;
 	pointer-events: none;
-	
+
 	transition: border-color var(--prime-animation) var(--prime-transition-timing-function);
 }
 .checkbox-icon {
 	display: block;
 	width: 100%;
 	height: 100%;
-	fill: #FFFFFF;				
+	fill: #ffffff;
 }
 .checkbox:checked + .icon-position {
 	background-color: var(--accent-color);
@@ -876,12 +870,11 @@ span {
 	border-color: var(--accent-color);
 	outline: 1px solid #212121;
 }
-.checkbox-text { 
+.checkbox-text {
 	display: flex;
 	justify-content: center;
-	
-		
-	padding-left: 24px;	
+
+	padding-left: 24px;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
@@ -889,9 +882,16 @@ span {
 }
 .checkbox-text a {
 	margin-left: 3px;
+	color: var(--accent-color);
+	text-decoration: none;
 }
-.modal-btn-center {
-	display: flex;
-	justify-content: center;		
+.contract .underline {
+	line-height: 0.85;
+	border-bottom: 1px solid;		
 }
-
+.modal-button {
+	display: block;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
